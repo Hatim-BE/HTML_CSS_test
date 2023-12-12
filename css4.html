@@ -47,6 +47,14 @@ div, .brown{
 </head>
 <body>
 <h1 class="red">Anatomy of a CSS Rule</h1>
+
+<div style="font-size:2em">one <!--bigger relatively by x2 to the default font-size of the browzer-->
+  <div style="font-size:2em">two <!--bigger relatively to the to the direct parent tag by x2-->
+    <div style="font-size:.5em">three <!--smaller relatively to the direct parent tag by /2-->
+    </div>
+  </div>
+</div>
+
 <h2 class="green">Subheading 1</h2>
 <p class="style">CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed. A CSS rule contains two parts: a selector and a declaration.</p>
 <h2 class="green">Subheading 2</h2>
